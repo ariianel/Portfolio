@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/*Ancrage*/
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #dedcf1;
+    color: #eae9f5;
+}
+
+/********************** Début Acceuil *******************/
+#header {
+    width: 100%;
+    height: 99vh;
+    background-color: #393679;
+    background-size: cover;
+    background-position: center;
+}
+
+#header svg{
+    position: absolute;
+    bottom: 0;
+}
+.container{
+    padding: 10px 10%;
+}
+
+/*Navigation*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+nav ul li a::after{
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    background: #94c5e9;
+    height: 3px;
+    width: 0; /*Permet de cacher*/
+    content: '';
+    transition: 0.6s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+/*Texte d'accueil*/
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+/*Télécharge CV bouton*/
+.btn.btn2{
+    display: inline-block;
+    font-size: 20px;
+    background: #94c5e9;
+    color: #FBF9F8;
+    transition: .5s;
+}
+.btn.btn2:hover{
+    background: #7da6c3;
+}
+/************************ Fin Acceuil ****************************/
+
+/**********************  Début Présentation  *********************/
+#presentation{
+    padding-top: 80px 0;
+    color: #393679;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col1{
+    flex-basis: 35%;
+}
+
+.col1 img{
+    width:100%;
+}
+
+.col2{
+    flex-basis: 60%;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #393679;
+}
+
+.col2 a {
+    text-decoration: none;
+    color: #5952e8;
+    cursor: pointer;
+    list-style: none;
+    transform: .5s;
+}
+.col2 a:hover {
+    color: #8884d2;
+}
+
+.sub-title{
+    display: flex;
+    margin: 20px 0 40px;
+
+
+}
+
+.link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.link::after {
+    content:'';
+    width: 0;
+    height: 3px;
+    background:#393679;
+    position: absolute;
+    left: 0;
+    bottom:-8px;
+    transition: 0.5s;
+}
+
+.link.active-link::after{
+    width: 50%;
+}
+
+.contents ul li {
+    list-style: none;
+    margin:10px 0;
+}
+
+.contents ul li span{
+    color: #7faccb;
+    font-size: 14px;
+}
+
+.contents ul li h3{
+    color: #7c76ea;
+    font-size: 12px;
+}
+
+.contents ul li h2{
+    color: #393679;
+    font-size: 12px;
+}
+
+.contents{
+    display: none;
+}
+
+.contents.active-tab{
+    display: block;
+}
+
+/*******************    Fin Présentation  ************************/
+
+/***********************   Début Skills    **************************/
+#skills{
+    padding-bottom: 130px;
+    background: #393679;
+    position: relative;
+}
+
+#skills svg .wave1{
+    position: absolute;
+    top: 0;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.skills-list div{
+    background: #FBF9F8;
+    padding: 40px;
+    font-size: 13px;
+    color: #393679;
+    font-weight: 300;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.242);
+}
+.skills-list div i{
+    font-size: 38px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.skills-list div i:hover{
+    transition: .5s;
+    transform: scale(1.1) rotate(10deg);
+}
+
+.skills-list ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-list ul li{
+    list-style: none;
+    text-decoration: none;
+    color: #393679;
+    
+}
+
+.skills-list div h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-list div p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills #wave2{
+    position: absolute;
+    bottom: 0;
+}
+/**********************  Fin Skills   **************************/
+
+/************************   Début portfolio   **********************/
+#portfolio{
+    padding: 50px 0;
+    color: #393679;
+}
+
+#portfolio svg{
+    position: absolute;
+    bottom: 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    color: #FBF9F8;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(130, 96, 184, 0.483),#2e2b61);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fcfcfc;
+}
+.layer a{
+    color: #94c5e9;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 60px;
+    /*background: #fff;*/
+    width: 60%;
+    height: 50px;
+    padding-bottom: 10px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.layer a:hover{
+color: #83aecc;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+    
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width:fit-content;
+    border: 1px solid #393679;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #393679;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #393679;
+    color: #FBF9F8;
+}
+/**********************   Fin Portfolio   ************************/
+
+/**********************   Début Contact   **************************/
+#contact{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background: #393679;
+    position: relative;
+}
+#contact svg{
+    position: absolute;
+    top: 0;
+}
+
+.contact-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.contact-list div{
+    background: #FBF9F8;
+    height: 15vh;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.242);
+}
+
+.contact-list div a{
+    text-decoration: none;
+}
+
+.contact-list div i{
+    font-size: 38px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contact-list div i:hover{
+    transition: .5s;
+    transform: scale(1.1) rotate(10deg);
+}
+
+.contact-list div h2{
+    color: rgb(27, 27, 27);
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*********************  Fin Contact  ************************/
+
+/************************   Début Footer   *********************/
+
+.footer-bottom{
+    background: #393679;
+    width: 100%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-break: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/**********************  Fin Footer   **********************/
+
+/********$*****  Responsive ***************/
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width:732px){
+    .header-text {
+        margin-top: 50%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background:#94c5e9;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .btn.btn2{
+        font-size: 15px;
+    }
+    /*Contact*/
+    .sub-title{
+        font-size: 40px;
+    }
+    .col1, .col2{
+        flex-basis: 100%;
+    }
+    .col1{
+        margin-bottom:30px ;
+    }
+    .col2{
+        font-size: 15px;
+    }
+    .link{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+}
+
+/**** Fin Responsive *****/

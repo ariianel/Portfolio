@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- import icons -->
+    <script src="https://kit.fontawesome.com/1672a78554.js" crossorigin="anonymous"></script>
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    <!----------- Début Page d'Accueil -------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#presentation">Presentation</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" style="color: #ffffff;"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, <br> je suis Ariane Luc</h1>
+                <p>Etudiante en informatique à l'IUT Paris Rives de Seines</p>
+                <a href="docs/Ariane_Luc_CV.pdf" download class="btn btn2">Download CV</a>
+                
+            </div>
+        </div>
+        <!-- import image svg vague -->
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 140" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(222, 220, 241, 1)" offset="0%"></stop><stop stop-color="rgba(222, 220, 241, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,28L80,44.3C160,61,320,93,480,95.7C640,98,800,70,960,60.7C1120,51,1280,61,1440,70C1600,79,1760,89,1920,91C2080,93,2240,89,2400,93.3C2560,98,2720,112,2880,100.3C3040,89,3200,51,3360,32.7C3520,14,3680,14,3840,32.7C4000,51,4160,89,4320,95.7C4480,103,4640,79,4800,79.3C4960,79,5120,103,5280,114.3C5440,126,5600,126,5760,109.7C5920,93,6080,61,6240,58.3C6400,56,6560,84,6720,81.7C6880,79,7040,47,7200,35C7360,23,7520,33,7680,39.7C7840,47,8000,51,8160,56C8320,61,8480,65,8640,77C8800,89,8960,107,9120,116.7C9280,126,9440,126,9600,121.3C9760,117,9920,107,10080,88.7C10240,70,10400,42,10560,44.3C10720,47,10880,79,11040,95.7C11200,112,11360,112,11440,112L11520,112L11520,140L11440,140C11360,140,11200,140,11040,140C10880,140,10720,140,10560,140C10400,140,10240,140,10080,140C9920,140,9760,140,9600,140C9440,140,9280,140,9120,140C8960,140,8800,140,8640,140C8480,140,8320,140,8160,140C8000,140,7840,140,7680,140C7520,140,7360,140,7200,140C7040,140,6880,140,6720,140C6560,140,6400,140,6240,140C6080,140,5920,140,5760,140C5600,140,5440,140,5280,140C5120,140,4960,140,4800,140C4640,140,4480,140,4320,140C4160,140,4000,140,3840,140C3680,140,3520,140,3360,140C3200,140,3040,140,2880,140C2720,140,2560,140,2400,140C2240,140,2080,140,1920,140C1760,140,1600,140,1440,140C1280,140,1120,140,960,140C800,140,640,140,480,140C320,140,160,140,80,140L0,140Z"></path></svg>
+    </div>
+    <!------------- Fin Page d'Accueil ------------->
+
+    <!-- Début Page de Présentation -->
+    <div id="presentation">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="images/portfolio_pp.png" alt="profil-picture">
+                </div>
+                <div class="col2">
+                    <h1 class="title">Presentation</h1>                    
+                        <p>💜 C'est en 2021 que j'ai été introduite au monde de l'informatique, c'est grâce à Python que cette passion ainsi que cette reconversion scolaire à commencé. 💜 <br> <br>
+
+                        Etudiante en première année de BUT Informatique à l'IUT de Paris-Rives-de-Seine, j'ai acquis de solides compétences en programmation et en développement d'applications  ! <br><br>
+
+                        Mon objectif à long terme est de devenir une développeuse expérimentée et de contribuer à des projets innovants dans le domaine du développement informatique. Je suis donc à la recherche d'une alternance pour apprendre au près de professionnels et me perfectionner dans ce domaine qui me passionne tant. <br> <br>
+                        💬 N'hésitez pas à me  <a href="#contact">contacter</a> si vous souhaitez en savoir plus sur mes compétences et mes projets actuels. 💬 </p>       
+
+                    <div class="sub-title">
+                        <p class="link active-link" onclick="opentab('profil')">Profil</p>
+                        <p class="link" onclick="opentab('education')">Education</p>
+                        <p class="link" onclick="opentab('experiences')">Experiences</p>
+                        <p class="link" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="contents active-tab" id="profil">
+                        <ul>
+                            <li>Age : <h3>20 ans</h3></li>
+                            <li>Date de naissance : <h3>30 mars 2003</h3></li>
+                            <li>Localisation : <h3>Paris 13ème</h3></li>
+                            <li>Statut : <h3>Recherche d'alternance dans le développement informatique</h3></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="contents" id="education">
+                         <ul>
+                            <li><span><U>IUT de Paris - Rives de Seine</U></span><br>BUT Informatique | 2022-actuel<h3>Parcours : Développement d'applications</h3></li>
+                            <li><span><U>Lycée Jean Baptise Corot</U></span><br>Prépa PCSI | 2021<h3>Spécialités : Physique, Chimie, Sciences Ingénieurs</h3></li>
+                            
+                            <li><span><U>Lycée Léonard de Vinci</U></span><br>Bac Général | 2018-2021<h3>Bac : Mention Bien</h3></li>
+                         </ul>
+                    </div>
+                    <div class="contents" id="experiences">
+                        <ul>
+                    
+                        <li><span><U>Penelope | 2021-2022</U></span><br>Hôtesse d'accueil <h3>En tant qu'hôtesse d'accueil de la Direction Générale de Natixis, étant la première personne que les visiteurs rencontrent en arrivant, j'ai été chargée de représenter l'entreprise en maintenant une apparence soigné et professionnelle. Mes principales responsabilités incluaient la gestion des appels entrants, la prise en charge des visiteurs, la gestion des agendas des membres de la direction, du courrier et du service à table. 
+                                                                                            J'ai également été formée pour utiliser plusieurs systèmes informatiques, tels que les systèmes de réservation de salle de réunion, les agendas électroniques et les logiciels de traitement de texte pour rédiger des documents professionnels.
+                                                                                            Finalement, mon travail en tant qu’hôtesse m'a permis de développer des compétences importantes dans la communication professionnelle, la gestion de l'accueil des clients, des appels et l'utilisation de différents outils informatiques pour effectuer diverses tâches administratives.</h3></li>
+                        <li><span><U>McDonald's | 2022</U></span><br>Equipière Polyvalente<h3>En tant qu'équipière polyvalente chez McDonald's, j'ai été chargée d'effectuer une variété de tâches différentes. Mon rôle principal était de prendre et préparer les commandes, mais également de gérer l'hygiène du restaurant et de la cuisine <br>
+                                                                                            J'ai travaillé en équipe, ce qui signifiait que j'ai souvent été amenée à aider mes collègues ou même former des nouveaux employés. <br>
+                                                                                            En somme, mon travail en tant qu'équipière polyvalente chez McDonald's m'a permis de développer des compétences importantes dans la gestion du temps, la communication, la résolution de problèmes, ainsi que dans le service à la clientèle.</h3></li>
+                        <li><span><U>DM Diffusion | 2017 </U></span><br>Stagiaire<h3>Stage de 3 ème au collège chez un grossiste d'Airsoft</h3></li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="hobbies">
+                        <ul>
+                        <li><span><U>Musique</U></span><br>R&B, Indie, Rock, Pop...<h3>Artistes préférés : Lana Del Rey, The Weeknd, Steve Lacy</h3></li>
+                        <li><span><U>Jeux-Vidéos</U></span><br>The Witcher 3, Genshin Impact, Call of Duty...</li>
+                        <li><span><U>Anime</U></span><br>Dororo, Naruto, Demon Slayer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Page de Présentation -->
+
+    <!-- Début Skills -->
+    <div id="skills">
+        <svg id="wave1" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 110" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(251, 249, 248, 1)" offset="0%"></stop><stop stop-color="rgba(251, 249, 248, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L80,9.2C160,18,320,37,480,51.3C640,66,800,77,960,67.8C1120,59,1280,29,1440,29.3C1600,29,1760,59,1920,58.7C2080,59,2240,29,2400,20.2C2560,11,2720,22,2880,25.7C3040,29,3200,26,3360,22C3520,18,3680,15,3840,18.3C4000,22,4160,33,4320,44C4480,55,4640,66,4800,64.2C4960,62,5120,48,5280,36.7C5440,26,5600,18,5760,14.7C5920,11,6080,11,6240,25.7C6400,40,6560,70,6720,71.5C6880,73,7040,48,7200,31.2C7360,15,7520,7,7680,11C7840,15,8000,29,8160,33C8320,37,8480,29,8640,38.5C8800,48,8960,73,9120,69.7C9280,66,9440,33,9600,29.3C9760,26,9920,51,10080,51.3C10240,51,10400,26,10560,14.7C10720,4,10880,7,11040,9.2C11200,11,11360,11,11440,11L11520,11L11520,110L11440,110C11360,110,11200,110,11040,110C10880,110,10720,110,10560,110C10400,110,10240,110,10080,110C9920,110,9760,110,9600,110C9440,110,9280,110,9120,110C8960,110,8800,110,8640,110C8480,110,8320,110,8160,110C8000,110,7840,110,7680,110C7520,110,7360,110,7200,110C7040,110,6880,110,6720,110C6560,110,6400,110,6240,110C6080,110,5920,110,5760,110C5600,110,5440,110,5280,110C5120,110,4960,110,4800,110C4640,110,4480,110,4320,110C4160,110,4000,110,3840,110C3680,110,3520,110,3360,110C3200,110,3040,110,2880,110C2720,110,2560,110,2400,110C2240,110,2080,110,1920,110C1760,110,1600,110,1440,110C1280,110,1120,110,960,110C800,110,640,110,480,110C320,110,160,110,80,110L0,110Z"></path></svg>
+        <div class="container">
+            <h1 class="sub-title">Mes Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-html5" style="color: #83b3c8;"></i>
+                    <h2>Front-End</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Boostrap</li>
+                        <li>Responsive design</li>  
+                    </ul>
+                               
+                </div>
+                <div>
+                    <i class="fa-solid fa-code" style="color: #83b3c8;"></i>
+                    <h2>Back-End</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>C/C++</li>
+                        <li>Python</li>                     
+                    </ul>      
+                    <ul>
+                        <li>VB</li>
+                        <li>Swift</li>
+                        <li>Assembleur</li> 
+                        <li>Shell</li> 
+                    </ul>                          
+                </div>
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench" style="color: #83b3c8;"></i>
+                    <h2>Autres</h2>
+                    <ul>
+                        <li>Github</li>
+                        <li>.NET</li>
+                        <li>XCode</li>
+                        <li>Oracle</li>
+                        <li>UML</li>
+                        
+                    </ul>  
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Pack Office</li> 
+                        <li>CiscoPacketTracer</li> 
+                    </ul>                              
+                </div>
+            </div>
+        </div>
+        <svg id="wave2" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(57, 54, 121, 1)" offset="0%"></stop><stop stop-color="rgba(57, 54, 121, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,20L120,31.7C240,43,480,67,720,68.3C960,70,1200,50,1440,43.3C1680,37,1920,43,2160,50C2400,57,2640,63,2880,65C3120,67,3360,63,3600,66.7C3840,70,4080,80,4320,71.7C4560,63,4800,37,5040,23.3C5280,10,5520,10,5760,23.3C6000,37,6240,63,6480,68.3C6720,73,6960,57,7200,56.7C7440,57,7680,73,7920,81.7C8160,90,8400,90,8640,78.3C8880,67,9120,43,9360,41.7C9600,40,9840,60,10080,58.3C10320,57,10560,33,10800,25C11040,17,11280,23,11520,28.3C11760,33,12000,37,12240,40C12480,43,12720,47,12960,55C13200,63,13440,77,13680,83.3C13920,90,14160,90,14400,86.7C14640,83,14880,77,15120,63.3C15360,50,15600,30,15840,31.7C16080,33,16320,57,16560,68.3C16800,80,17040,80,17160,80L17280,80L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path></svg>
+    </div>
+    <!-- Fin Skills -->
+
+    <!-- Début Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mes Projets</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/formation.webp" alt="work-image">
+                    <div class="layer">
+                        <h3><U>Gestion de formation | C</U></h3>
+                        <hr size="1" color="#5952e8">
+                        <p>Lignes de commandes qui permettent de gérer une formation universitaire, 
+                            avec création d'un bulletin scolaire.
+                        </p>
+                        <a href="https://github.com/ariianel/Gestion-d-une-Formation">Code source</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/jeu-quart-de-singe.webp" alt="work-image">
+                    <div class="layer">
+                        <h3><U>Quart de Singe | C++</U></h3>
+                        <hr size="1" color="#5952e8">
+                        <p>Le but est de dire une lettre chacun son tour afin de former un mot. Celui qui se trompe dans l'orthographe ou qui n'arrive pas à ajouter une lettre se prend un quart de singe.
+                        </p>
+                        <a href="https://github.com/ariianel/Quart-de-Singe">Code Source</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/graphe.png" alt="work-image">
+                    <div class="layer">
+                        <h3><U>Graphes Orientés Valués | Java</U></h3>
+                        <hr size="1" color="#5952e8">
+                        <p>Réalisation en Java d'une application permettant de manipuler des graphes. Une application qui permet de déterminer le plus court chemin d'un itinéraire.
+                        </p>
+                        <a href="#">En développement</i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Voir plus</a>
+        </div>
+    
+    </div>
+    <!-- Fin Portfolio -->
+
+    <!-- Début Contact -->
+    <div id="contact">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(57, 54, 121, 1)" offset="0%"></stop><stop stop-color="rgba(57, 54, 121, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,20L120,31.7C240,43,480,67,720,68.3C960,70,1200,50,1440,43.3C1680,37,1920,43,2160,50C2400,57,2640,63,2880,65C3120,67,3360,63,3600,66.7C3840,70,4080,80,4320,71.7C4560,63,4800,37,5040,23.3C5280,10,5520,10,5760,23.3C6000,37,6240,63,6480,68.3C6720,73,6960,57,7200,56.7C7440,57,7680,73,7920,81.7C8160,90,8400,90,8640,78.3C8880,67,9120,43,9360,41.7C9600,40,9840,60,10080,58.3C10320,57,10560,33,10800,25C11040,17,11280,23,11520,28.3C11760,33,12000,37,12240,40C12480,43,12720,47,12960,55C13200,63,13440,77,13680,83.3C13920,90,14160,90,14400,86.7C14640,83,14880,77,15120,63.3C15360,50,15600,30,15840,31.7C16080,33,16320,57,16560,68.3C16800,80,17040,80,17160,80L17280,80L17280,100L17160,100C17040,100,16800,100,16560,100C16320,100,16080,100,15840,100C15600,100,15360,100,15120,100C14880,100,14640,100,14400,100C14160,100,13920,100,13680,100C13440,100,13200,100,12960,100C12720,100,12480,100,12240,100C12000,100,11760,100,11520,100C11280,100,11040,100,10800,100C10560,100,10320,100,10080,100C9840,100,9600,100,9360,100C9120,100,8880,100,8640,100C8400,100,8160,100,7920,100C7680,100,7440,100,7200,100C6960,100,6720,100,6480,100C6240,100,6000,100,5760,100C5520,100,5280,100,5040,100C4800,100,4560,100,4320,100C4080,100,3840,100,3600,100C3360,100,3120,100,2880,100C2640,100,2400,100,2160,100C1920,100,1680,100,1440,100C1200,100,960,100,720,100C480,100,240,100,120,100L0,100Z"></path></svg>
+        <div class="container">
+            <h1 class="sub-title">Contact</h1>
+            <div class="contact-list">
+                <div>
+                    <a href="mailto:lucariane03@gmail.com"><i class="fa-solid fa-envelope" style="color: #83b3c8;"></i></a>  
+                    <h2>Email</h2>                 
+                </div>
+                <div>
+                    <a href="https://github.com/ariianel "><i class="fa-brands fa-github" style="color: #83b3c8;"></i></a>      
+                    <h2>Github</h2>          
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/ariane-luc"><i class="fa-brands fa-linkedin" style="color: #83b3c8;"></i></a> 
+                    <h2>Linkedin</h2>               
+                </div>
+        </div>
+    </div>
+    <!-- Fin Contact -->
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 by <span>ariane</span> </p>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("link")
+    var tabcontents = document.getElementsByClassName("contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!-- hamburger -->
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
